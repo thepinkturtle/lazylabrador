@@ -1,0 +1,24 @@
+-Git
+1. git add .
+2. git commit -m ""
+3. git push heroku master
+
+-Open App
+heroku open
+
+-Scale the app
+heroku ps:scale web=1
+
+-Heroku login
+heroku login devinlax@hotmail.com
+password same as work password
+
+-If you want to start a new virtual environment to install new dependencies
+pipenv --three
+pipenv install
+pipenv shell
+
+-Run app locally
+python manage.py collectstatic
+heroku local web
+(point browser to http://localhost:5000)
