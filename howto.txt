@@ -10,8 +10,8 @@ heroku open
 heroku ps:scale web=1
 
 -Heroku login
-heroku login devinlax@hotmail.com
-password same as work password
+login email
+work
 
 -If you want to start a new virtual environment to install new dependencies
 pipenv --three
