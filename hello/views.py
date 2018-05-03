@@ -9,7 +9,8 @@ import os
 def index(request):
     times = int(os.environ.get('TIMES',3))
     # return HttpResponse('Hello! ' * times)
-    return HttpResponse('Hello from Python!')
+    # return HttpResponse('Hello from Python!')
+    return render(request, "index.html" )
 
 def db(request):
 
@@ -18,5 +19,5 @@ def db(request):
 
     greetings = Greeting.objects.all()
 
-    return render(request, 'index.html', {'greetings': greetings})
+    return render(request, "db.html", {'greetings': greetings})
 
