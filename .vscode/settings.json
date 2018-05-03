@@ -1,4 +1,4 @@
 {
-    "python.linting.enabled": false
-    
+    "python.linting.enabled": false,
+    "python.pythonPath": "/home/devin/.local/share/virtualenvs/lazylabrador-m9it4FgN/bin/python"
 }
