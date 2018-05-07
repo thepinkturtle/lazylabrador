@@ -1,8 +1,30 @@
-{% extends "base.html" %}
-{% load staticfiles %}
+{% extends "base.html" %} {% load staticfiles %} {% block content %}
+<!--{% static 'css/formating.css' %}-->
 
-{% block content %}
 <p>
     Mischievous labradors lazily lay in shady swaths of grass slowly sniffing seasonal summer zephyrs.
 </p>
+
+<body>
+    <div id="memories">
+        <div style="display: inline-block">
+            <svg height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke=rgb(0,191,255) stroke-width="20" fill="white" />
+        </div>
+
+        <div style="display: inline-block">
+            <svg height="200" width="100">
+                <circle cx="50" cy="50" r="40" stroke=rgb(0,191,255) stroke-width="20" fill="white" />
+                <line x1="50" y1="90" x2="50" y2="200" stroke=rgb(0,191,255) stroke-width="20" />
+        </div>
+    </div>
+
+    <div id="timeline" style="position:absolute; left:0; right:0;">
+        <svg id="svg-line" height="100" width="100%">
+            <!--rgb(255,0,0)-->
+            <line x1="0" y1="50" x2="100%" y2="50" stroke=rgb(0,191,255) stroke-width="20" />
+    </div>
+
+</body>
+
 {% endblock %}
