@@ -5,14 +5,13 @@ from django.contrib.auth.forms import UserCreationForm
 from .models import Greeting
 import requests
 import os
-
 #remember to start a new 'pipenv shell'
 # Create your views here.
-def index(request):
+def home(request):
     times = int(os.environ.get('TIMES',3))
     # return HttpResponse('Hello! ' * times)
     # return HttpResponse('Hello from Python!')
-    return render(request, "index.html" )
+    return render(request, "home.html" )
 
 def db(request):
 

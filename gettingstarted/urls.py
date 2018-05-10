@@ -1,18 +1,16 @@
 from django.conf.urls import include, url
 from django.urls import path
-
+from django.contrib.auth import views as auth_views
 from django.contrib import admin
 admin.autodiscover()
 
 import hello.views
 
-# Examples:
-# url(r'^$', 'gettingstarted.views.home', name='home'),
-# url(r'^blog/', include('blog.urls')),
-
 urlpatterns = [
+    url(r'^login/$', auth_views.login, {'template_name': 'login.html'}, name='login'),
+    url(r'^logout/$', auth_views.logout, {'template_name': 'logged_out.html'}, name='logout'),
     url(r'^signup/$', hello.views.signup, name='signup'),
-    url(r'^$', hello.views.index, name='index'),
+    url(r'^$', hello.views.home, name='home'),
     url(r'^db', hello.views.db, name='db'),
     path('admin/', admin.site.urls),
 ]
