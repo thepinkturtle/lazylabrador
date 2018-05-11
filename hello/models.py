@@ -1,5 +1,4 @@
 from django.db import models
 
-# Create your models here.
-class Greeting(models.Model):
-    when = models.DateTimeField('date created', auto_now_add=True)
+class Timeline(models.Model):
+    user_name = models.CharField(max_length=20, help_text="Enter your full name")
