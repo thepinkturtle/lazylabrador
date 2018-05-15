@@ -13,6 +13,10 @@ heroku ps:scale web=1
 login email
 work
 
+-best way to update DATABASE and how login to heroku server
+heroku run bash
+python manage.py migrate
+
 -If you want to start a new virtual environment to install new dependencies
 pipenv --three
 pipenv install
