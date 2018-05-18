@@ -12,6 +12,9 @@ def index(request):
 def db(request):
     return render(request, "db.html" )
 
+def login(request):
+    return render(request, "login.html")
+
 #def output(request):
 #    if request.is.ajax():
 #        py_obj = mrcode.test_code(10)
