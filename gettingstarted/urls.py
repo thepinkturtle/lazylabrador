@@ -12,6 +12,6 @@ urlpatterns = [
 #    url(r'^signup/$', hello.views.signup, name='signup'),
     url(r'^$', hello.views.login, name='login'),
     url(r'^db', hello.views.db, name='db'),
-    url(r'^index', hello.views.index name='index')
+  #  url(r'^index', hello.views.index name='index')
     path('admin/', admin.site.urls),
 ]
